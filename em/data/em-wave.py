@@ -129,7 +129,7 @@ if __name__=="__main__":
     # Generate and save data
     num_samples = NUMBER_OF_RANDOM_FUNCTION
     delta_t=dt
-    file_name=f"simple-wave-c{c}-dx{dx}-delta_t{delta_t}-I{I[0]}{I[1]}.npz"
+    file_name=f"data.npz"
     dataset = generate_dataset(num_samples)
     print("ok")
     save_dataset(dataset,file_name)

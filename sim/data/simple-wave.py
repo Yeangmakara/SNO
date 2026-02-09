@@ -20,7 +20,7 @@ if c * dt / dx > 1:
     raise ValueError("CFL condition violated: c * Δt / Δx must be ≤ 1. Reduce delta_t or increase spatial resolution.")
 
 MAX_CHEBYSHEV_DEGREE=20
-NUMBER_OF_RANDOM_FUNCTION=10
+NUMBER_OF_RANDOM_FUNCTION=100000
 
 #Generate Random function 
 #by using Chebyshev polynomial
