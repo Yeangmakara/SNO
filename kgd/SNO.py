@@ -217,7 +217,7 @@ if __name__ == "__main__":
     total_params = sum(p.numel() for p in model.parameters())
     print("Total Parameters:", total_params)
 
-"""
+
     optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)
     criterion = torch.nn.MSELoss()
 
@@ -250,10 +250,9 @@ if __name__ == "__main__":
 
         if epoch % SAVE_INTERVAL == 0 or epoch == EPOCHS:
             elapsed = time.time() - start_time
-            checkpoint_path = os.path.join(SAVE_DIR, f"sno_002_epoch_{epoch}.pth")
+            checkpoint_path = os.path.join(SAVE_DIR, f"SNO_epoch_{epoch}.pth")
             torch.save(model.state_dict(), checkpoint_path)
             print(f"Checkpoint saved: {checkpoint_path}")
             print(f"Elapsed: {elapsed:.2f}s ({elapsed/60:.2f} minutes)")
 
     print(f"Total training time: {(time.time() - start_time)/3600:.2f} hours")
-"""
